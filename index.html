@@ -1,5 +1,4 @@
-<h>Cookie Clicker</h>
-
+<h1>Cookie Clicker</h1>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <p id="demo"></p>
@@ -34,10 +33,10 @@
 </style>
 <script>
   var grandmalvl = 1
-  var cookie = 1
+  var cookie = 0
 
   function myFunction() {
-    cookie += grandmalvl
+    cookie += 1 * grandmalvl  
     document.getElementById("demo").innerHTML = cookie + " cookies clicked";
   }
 
@@ -45,8 +44,8 @@
     if (cookie > 30)
       grandmalvl += 1
     cookie -= 30
-    document.getElementById("demo1").innerHTML = " ";
-    document.getElementById("demo").innerHTML = "Grandma Powerup level " + grandmalvl;
+    document.getElementById("demo").innerHTML = cookie + " cookies clicked";
+    document.getElementById("demo1").innerHTML = "Grandma Powerup Level = " + grandmalvl;
 
   }
 
